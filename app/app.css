@@ -1,0 +1,58 @@
+/* app css stylesheet */
+
+/*#center-container {*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+/*}*/
+.container {
+    margin-top: 15%;
+    width: 80%;
+    outline-width: 3px;
+    outline-color: gray;
+    outline-style: solid;
+}
+
+.status {
+    font-size: 900%;
+}
+
+.info {
+    padding: 4%;
+    background-color: #00b3ee;
+    color: white;
+    height: 100%;
+}
+
+.side {
+    padding: 4%;
+}
+
+#timeDisplay {
+    text-align: center !important;
+    font-size: 400% !important;
+    padding: 4% !important;
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li + li:before {
+    content: "|";
+    padding-right: 0.3em;
+}

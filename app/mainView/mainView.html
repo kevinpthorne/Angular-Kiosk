@@ -1,0 +1,44 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-8 info">
+            <h1 class="status">Open</h1>
+
+            <br>
+            <br>
+            <br>
+
+            <h3> {{ room.name }}</h3>
+
+            <button type="button" class="btn btn-default" ng-click="switch()">View Agenda</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="col-md-4 side">
+
+            <div class="row">
+                <h3 id="timeDisplay"> {{ timeDisplay }} </h3>
+            </div>
+
+            <br>
+            <br>
+
+            <i-didnt-want-div class="list-group" ng-repeat="reservation in reservations">
+                <div class="list-group-item">
+                    <h3> {{ reservation.title }} </h3>
+                    <p> {{ trimDate(reservation.startTime ) }} - {{ trimDate(reservation.endTime ) }} </p>
+                </div>
+            </i-didnt-want-div>
+
+
+        </div>
+
+    </div>
+
+</div>

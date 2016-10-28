@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-10">
+
+            <div class="info">
+                <h1>Events</h1>
+            </div>
+
+            <i-didnt-want-div class="list-group" ng-repeat="reservation in reservations">
+                <div class="list-group-item">
+                    <h3> {{ reservation.title }} </h3>
+                    <p> {{ trimDate(reservation.startTime ) }} - {{ trimDate(reservation.endTime ) }} </p>
+                </div>
+            </i-didnt-want-div>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <button type="button" class="btn btn-default" ng-click="switchBack()">Go Back</button>
+
+        </div>
+    </div>
+</div>
